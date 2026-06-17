@@ -19,6 +19,7 @@ cargo build --target "$TARGET"
 echo "==> Linking with emcc (-sWASM_BINDGEN -sMODULARIZE=instance)"
 echo 'int main() { return 0; }' > empty.c
 "$EMCC" empty.c "$LIB" \
+  -fwasm-exceptions \
   -sWASM_BINDGEN \
   -sMODULARIZE=instance \
   -Wno-experimental \

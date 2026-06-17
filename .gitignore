@@ -1,5 +1,3 @@
 /target
 /Cargo.lock
 empty.c
-out.mjs
-out.wasm

@@ -28,6 +28,7 @@ In factory mode (`-sMODULARIZE=1`) the same functions are reachable as
 
 ## Requirements
 
+- Modern Rust toolchain >= 1.95
 - `cargo` with the `wasm32-unknown-emscripten` target installed
 - `wasm-bindgen` on `$PATH`
 - `emcc` on `$PATH` (or set `EMCC=/path/to/emcc`)
